@@ -25,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="bg-background">
-      <body className={`${inter.className} ${jetbrainsMono.variable} antialiased`}>
+    <html lang="en" style={{ backgroundColor: 'var(--color-background)' }}>
+      <body className={`${inter.className} ${jetbrainsMono.variable} antialiased`} style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-foreground)' }}>
         {children}
       </body>
     </html>
